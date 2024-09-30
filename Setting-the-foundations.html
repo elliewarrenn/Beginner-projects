@@ -1,0 +1,138 @@
+<style>
+    * {
+        text-align: center;
+    }
+   .mydiv {
+     width: auto;
+     height: 400px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-around;
+     border: 2px;
+     margin-top: 5px;
+     background-color: rgb(233, 104, 104);
+    }
+
+    section  {
+        height: 50px;
+        width: 50px;
+        background-color: rgb(153, 118, 186);
+    }
+
+    article p {
+        color: purple;
+    }
+
+    #nav {
+        font-family: monospace;
+    }
+
+    abbr[attribute] {
+        border-bottom: 1px solid #000000;
+    }
+    abbr[attribute]:hover {
+        cursor: pointer;
+    }
+    /* this isn't working */
+    input[type="submit"] {
+        cursor:pointer;
+    }
+</style>
+
+<body>
+    <article>
+        <h1>
+            this is heading 1
+        </h1>
+        <h2>
+            this is heading 2
+        </h2>
+        <h3>
+            this is heading 3
+        </h3>
+        <p>
+            this is a paragraph
+        </p>
+    </article>
+
+    <article>
+        <h1>
+            this is heading 1
+        </h1>
+        <h2>
+            this is heading 2
+        </h2>
+        <h3>
+            this is heading 3
+        </h3>
+        <p>
+            this is a paragraph
+        </p>
+    </article>
+
+    <div class="mydiv">
+        <section>
+            paragraph
+        </section>
+        <section>
+           paragraph
+        </section>
+    </div>
+
+    <div class="mydiv">
+        <section>
+            word
+        </section>
+        <section>
+           word
+        </section>
+    </div>
+
+    <nav>
+        <ul>
+            <li>list element 1</li>
+            <li>list element 2</li>
+            <li>list element 3</li>
+        </ul>
+    </nav>
+
+    <aside>
+        <ol>
+            <li>list element a</li>
+            <li>list element b</li>
+            <li>list element c</li>
+        </ol>
+    </aside>
+
+    <main> 
+        <p>this is <em>another</em> paragraph</p>
+        <p>and <strong>another</strong> one</p>
+        <p>one <span style="color:darkred">final</span> one</p>
+    </main>
+   
+    <!-- type selector in style 
+    decendant selector = indicated by a space between other selectors -->
+        <!-- ie. div  p  -->
+    
+    <ul id="nav">
+        <li>First</li>
+        <li>second</li>
+        <ol>
+            <li>subgroup first</li>
+            <li>subgroup second</li>
+        </ol>
+        <li>third</li>
+    </ul>
+
+    <!-- > + are combinators. (> is a  child combinator)(+ is an adjacent sibling combinator)(~ is a general sibling combinator)-->
+
+    <p> This is an example of an <abbr title="attribute">attribute</abbr> selector </p>
+
+    <!--     a[href^="http:"]
+             img[src$=".jpg"]
+             a[href*="/about/"]
+             a[rel~=next]
+            a[hreflang|=en] -->
+
+</body>

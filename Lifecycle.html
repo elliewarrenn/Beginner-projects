@@ -1,0 +1,128 @@
+<style>
+  html {
+    height: 100vh;
+    width: 100vw;
+
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+
+    scroll-snap-type: y mandatory;
+  }
+  body {
+      margin: 0;
+  }
+
+  section {
+    width: 100vw;
+    height: 100vh;
+
+    margin:  0;
+    padding: 0;
+
+    scroll-snap-align: start;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+
+    width: 100vw;
+    height: 100vh;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  div section {
+    width: 50vw;
+    height: 100vh;
+
+    margin: 0;
+  }
+
+  .overview-section {
+    font-size: 6em;
+    font-family: monospace;
+
+    text-align: center;
+
+    background-color: #f4a5a5;
+  }
+
+  .nebulae-section {
+    background-color: #5E1914;
+  }
+
+  .protostar-section {
+    background-color: #2E8B57;
+  }
+
+  .main-sequence-section {
+    background-color: #4682B4;
+  }
+
+  .death-sequence-one {
+    background-color: #8B4513;
+  }
+
+  .death-sequence-two {
+    background-color: #8B4513;
+  }
+  
+</style>
+
+<html>
+  <body>
+    <!-- introduction  page -->
+    <section class="overview-section">
+      <h1>
+        Lifecycle
+      </h1>
+    </section>
+    <!-- nebulae -->
+    <section class="nebulae-section">
+      Nebulae
+    </section>
+
+    <!-- prostar -->
+    <section class="protostar-section">
+      Protostar
+    </section>
+
+    <!-- main sequence -->
+    <section class="main-sequence-section">
+      Main sequence star
+    </section>
+
+    <!-- death sequence 1 -->
+    <section class="death-sequence-one">
+      red giant
+      white dwarf
+    </section>
+
+    <!-- death sequence 2 -->
+    <section class="death-sequence-two">
+      <div>
+        <section>
+          red supergiant
+          supernovae
+          neutron star
+        </section>
+        <section>
+          red supergiant
+          supernovae
+          black hole
+        </section>
+      </div>
+    </section>
+
+  </body>
+</html>
+
+
+

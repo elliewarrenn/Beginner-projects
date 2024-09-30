@@ -1,0 +1,52 @@
+<style>
+  h1{
+    text-align: center;
+  }
+
+  section {
+    position : relative;
+  }
+
+  .chapter::before {
+    opacity:  0.2;
+    position: absolute; /* Absolute positioning to move it where needed */
+    top: 0;
+    left: 0;
+    line-height: 0.7; /* Adjust line height to align better */
+    content: '"'; /* Adds a large quotation mark before the chapter content */
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20em; /* Sets a very large font size for the quotation mark */
+}
+
+.chapter p::first-letter {
+    float: left; /* Floats the first letter to the left */
+    margin-top: 5px;
+    font-size: 3em; /* Enlarges the first letter */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Sets the font for the first letter */
+}
+
+.chapter p::first-line {
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Sets the font for the first line of text */
+    text-transform: uppercase; /* Makes the first line of the chapter all uppercase */
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 8em; /* Adds some spacing to avoid text overlapping the quotation mark */
+    margin-top: 1em;
+    font-size: 1em; /* You can adjust this for readability */
+    line-height: 1em; /* Line height to adjust vertical spacing */
+}
+
+</style>
+
+<html>
+  <h1>A Study In Scarlet</h1>
+
+  <section class="chapter">
+    <p>
+      In the year 1878 I took my degree of doctor of medicine at the university of london, and proceeded to Netley to go through the course prescribed to surgeons in the army. Having completed my studies there, i was duly attached to the fifth northunmberland fusilliers as assistant surgeon.
+    </p>
+  </section>
+</html>
